@@ -16,10 +16,15 @@ def main(path: str = '.', db_name: str = 'test.db') -> None:
 
      create_table(
          cursor,
-         'masterchefs',
-         {'id_masterchef': 'INTEGER AUTO_INCREMENT PRIMARY KEY',
+         'animais',
+         {'id_animais': 'INTEGER AUTO_INCREMENT PRIMARY KEY',
           'nome': 'text NOT NULL',
-          'email': 'text NOT NULL',}
+          'nome_dono': 'text NOT NULL',
+          'saúde': 'text NOT NULL',
+          'vacinas_vermifugos': 'text NOT NULL',
+          'veterinario': 'text NOT NULL',
+
+          }
      )
 
      create_table(
