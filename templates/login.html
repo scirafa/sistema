@@ -1,22 +1,108 @@
-<!--perfil dela com as infos-->
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Perfil</title>
-    <link rel="stylesheet" href="../static/css/login.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    function Enviar() {
+
+    var nome = document.getElementById("nomeid");
+
+    if (nome.value != "") {
+        alert('Olá ' + nome.value + ', sua conta foi criada com sucesso!');
+    }
+
+}
+  </script>
+  <title>Bem vindo!</title>
+  <style>
+        body {
+            background-color: #f0f7a3;
+            text-align: center;
+            margin-top: 15%;
+        }
+
+        form {
+            font-family: Arial;
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            margin-left: 20px;
+            color: #04888c;
+            text-shadow: 5px 5px 5px #fcbc0c;
+        }
+
+        input, textarea {
+            width: 200px;
+            padding: 10px;
+            color: black;
+            margin-left: 20px;
+            margin-top: 10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 1px solid;
+        }
+        input:hover, textarea:hover, input:focus, textarea:focus {
+            border-color: #fcbc0c;
+            box-shadow: 5px 0px 9px #FFFF00;
+            color: black;
+            font-weight: bold;
+        }
+        .enviar {
+            background-color: #66FFFF;
+            height: 40px;
+            width: 100px;
+            font-weight: bold;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 1px solid;
+            color: black;
+        }
+
+        textarea {
+            width: 400px;
+            height: 120px;
+            line-height: 20px;
+            max-width: 400px;
+        }
+
+        form label {
+            margin-left: 20px;
+            color: black;
+            font-weight: bold;
+        }
+</style>
 </head>
-<body>
+<body id="pagina_form">
+<form name="meu_form">
+  <h1>Crie sua conta!</h1>
+
+  <label for="nome">Nome completo</label>
+  <input type="text" id="nomeid" placeholder="Digite seu nome" required="required" name="nome" /></br>
+
+  <label for="fone">Telefone</label>
+  <input type="tel" id="foneid" placeholder="(xx) xx xxxxx-xxxx" name="fone" /></br>
+
+  <label for="email">Email</label>
+  <input type="email" id="emailid" placeholder="nome@mail.com" name="email" /></br>
+
+  <label for="cpf">CNPJ</label>
+  <input type="cnpj" id="cnpjid" placeholder="xx.xxx.xxx/xxxx-xx " name="cnpj" /></br>
+
+  <label for="text">Endereço</label>
+  <input type="text" id="endid" placeholder="Digite seu endereço" name="end" /></br>
+
+  <label for="text">Senha</label>
+  <input type="text" id="senhaid" placeholder="Crie uma senha" name="senha" /></br>
+
+  <label for="text">Confirmar senha</label>
+  <input type="text" id="senha2id" placeholder="Confirme sua senha" name="senha2" /></br>
+
 </br>
-    <h1>Meu Perfil</h1>
-</br></br>
-<img src="img/brisalogo.jpg" height="100" width="100">
-<p>Alterar imagem</p>
-
-<h4>Nome Completo</h4>
-<h4>E-mail</h4>
-<h4>Telefone</h4>
-<h4>Endereço</h4>
-
+  <input type="submit" class="enviar" onclick="Enviar();" value="Criar conta" />
+</form>
 </body>
 </html>
