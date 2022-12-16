@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    function Enviar() {
+
+    var nome = document.getElementById("nomeid");
+
+    if (nome.value != "") {
+        alert('Olá ' + nome.value + ', sua conta foi criada com sucesso!');
+    }
+
+}
+  </script>
+  <title>Bem vindo de volta!</title>
+  <style>
+        body {
+            background-color: #f0f7a3;
+            text-align: center;
+            margin-top: 15%;
+        }
+
+        form {
+            font-family: Arial;
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            margin-left: 20px;
+            color: #04888c;
+            text-shadow: 5px 5px 5px #fcbc0c;
+        }
+
+        input, textarea {
+            width: 200px;
+            padding: 10px;
+            color: black;
+            margin-left: 20px;
+            margin-top: 10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 1px solid;
+        }
+        input:hover, textarea:hover, input:focus, textarea:focus {
+            border-color: #fcbc0c;
+            box-shadow: 5px 0px 9px #FFFF00;
+            color: black;
+            font-weight: bold;
+        }
+        .enviar {
+            background-color: #66FFFF;
+            height: 40px;
+            width: 100px;
+            font-weight: bold;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: 1px solid;
+            color: black;
+        }
+
+        textarea {
+            width: 400px;
+            height: 120px;
+            line-height: 20px;
+            max-width: 400px;
+        }
+
+        form label {
+            margin-left: 20px;
+            color: black;
+            font-weight: bold;
+        }
+</style>
+</head>
+<body id="pagina_form">
+<form name="meu_form">
+  <h1>Entrar:</h1>
+
+  <label for="email">Email</label>
+  <input type="email" id="emailid" placeholder="nome@mail.com" name="email" /></br>
+
+  <label for="text">Senha</label>
+  <input type="text" id="senhaid" placeholder="Crie uma senha" name="senha" /></br>
+
+</br>
+  <input type="submit" class="enviar" onclick="Enviar();" value="Entrar" />
+</form>
+</body>
+</html>
