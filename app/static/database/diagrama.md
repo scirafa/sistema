@@ -41,9 +41,9 @@ classDiagram
      TEXT nome_animal_a not null
      TEXT raca_animal_a not null
      TEXT sexo_animal_a not null
-     FLOAT idade_animal_a not null
-     TEXT castrado_a not null
-     TEXT comportamento_animal_a not null
+     TEXT idade_animal_a not null
+     BOOL castrado_a not null
+     TEXT comport_animal_a not null
      TEXT gatilhos_animal_a 
      TEXT nome_dono_a not null
      TEXT end_dono_a not null
@@ -52,12 +52,14 @@ classDiagram
  
  class Infos_Animais_S {
     INTEGER id_animal_s PK not null
-    TEXT prob_saude_psico not null
-    TEXT vet_nome not null
-    TEXT vet_clinica not null
-    TEXT alimentacao not null
-    TEXT medicacao
-    TEXT aviso_vacinas 
+    TEXT nome_animal_s not null
+    TEXT prob_s_psico
+    TEXT vet_nome 
+    TEXT vet_clinica 
+    BIGINT vet_fone 
+    TEXT alimentacao_s not null
+    TEXT medicacao_s
+    TEXT aviso_vacinas not null
  }
 
  class Receita_F_para_Lucro_F {
