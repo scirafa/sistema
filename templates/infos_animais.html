@@ -1,20 +1,16 @@
-<!--infos animais e donos-->
-<!--também o botão de aviso funcional-->
 <!DOCTYPE html>
+<html>
+<head>
 
-<html lang="pt-br">
+    <meta charset="UTF-8">
 
-    <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <meta name="viewport"content="width=device-width, initial-scale=1.0">
-
-        <title>Informações dos animais</title>
-        <style>
-            body {
+     <title>Informações</title>
+<style>
+body {
 
     padding: 0;
 
@@ -23,220 +19,78 @@
     background-color: #f0f7a3;
 
 }
-
-#infos {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    height: 100vh;
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+table, td, th {
+  border: 1px solid black;
 }
 
-.card {
-
-    background-color: rgba(19, 19, 19, 0.3);
-
-    padding: 40px;
-
-    border-radius: 2px;
-
-    width:280px;
-
+table {
+  border-collapse: collapse;
+  width: 50%;
 }
 
-.card-header {
+tr:hover {background-color: #add8e6;}
 
-    padding-bottom: 50px;
-
-    opacity: 0.8;
-
-    color: #fff;
-
-}
-
-.card-header::after {
-
-    content: "";
-
-    width: 280px;
-
-    height: 1px;
-
-    background-color: #fff;
-
-    display: block;
-
-    margin-top: -17px;
-
-    margin-left: -5px;
-
-}
-
-.card-content label {
-
-    color: #fff;
-
-    font-size: 12px;
-
-    opacity: 0.8;
-
-}
-
-.card-content-area {
-
-    display: flex;
-
-    flex-direction: column;
-
-    padding:10px 0;
-
-}
-
-.card-content-area input {
-
-    margin-top: 10px;
-
-    padding:0 5px;
-
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: transparent;
-
-    border:none;
-
-    border-bottom: 1px solid #e1e1e1;
-
-    outline: none;
-
-    color: #fff;
-
-}
-
-.card-footer {
-
-    display: flex;
-
-    flex-direction: column;
-
-}
-
-.card-footer .submit{
-
-    width: 100%;
-
-    height: 40px;
-
-    background-color: #a13854;
-
-    border:none;
-
-    color:#e1e1e1;
-
-    margin: 10px 0;
-
-}
-
-.card-footer a {
-
-    text-align: center;
-
-    font-size: 12px;
-
-    opacity: 0.8;
-
-    color: #fff;
-
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1.2em 2.8em;
     text-decoration: none;
-
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.btn:hover, .btn:focus {
+    color: black;
+    outline: 0;
+}
+.third {
+    border-color: #add8e6;
+    color: #fff;
+    box-shadow: 0 0 20px 20px #add8e6 inset, 0 0 0 0 #add8e6;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.third:hover {
+    box-shadow: 0 0 10px 0 #add8e6 inset, 0 0 10px 4px #add8e6;
+}
+.botoes {
+    bottom: 0;
+    text-align:;
 }
 
 </style>
-    </head>
+</head>
+<body>
 
-    <body>
-
-        <div id="infos">
-
-            <form class="card">
-
-                <div class="card-header">
-
-                    <h2>Informações dos animais</h2>
-
-                </div>
-
-                <div class="card-content">
-
-                    <div class="card-content-area">
-
-                        <label for="nome">Nome</label>
-
-                        <input type="text" id="nome" autocomplete="off">
-
-                    </div>
-
-                    <div class="card-content-area">
-
-                        <label for="idade">Idade</label>
-
-                        <input type="idade" id="idade" autocomplete="off">
-
-                    </div>
-
-                </div>
-
-                <div class="card-content">
-
-                    <div class="card-content-area">
-
-                        <label for="raça">Raça</label>
-
-                        <input type="text" id="raça" autocomplete="off">
-
-                    </div>
+<h2>Informações dos animais</h2>
 
 
-                <div class="card-content">
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Raça</th>
+    <th>Sexo</th>
+    <th>Castrado</th>
+    <th>Comportamento</th>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
 
-                    <div class="card-content-area">
-
-                        <label for="sexo">Sexo</label>
-
-                        <input type="text" id="sexo" autocomplete="off">
-
-                    </div>
-
-                <div class="card-content">
-
-                    <div class="card-content-area">
-
-                        <label for="castrado">Castrado</label>
-
-                        <input type="text" id="castrado" autocomplete="off">
-
-                    </div>
-
-
-                <div class="card-content">
-
-                    <div class="card-content-area">
-
-                        <label for="comportamento">Comportamento</label>
-
-                        <input type="text" id="comportamento" autocomplete="off">
-
-                    </div>
-
-
-
-            </form>
-
-        </div>
-
-    </body>
-
+</table>
+<div class="botoes">
+<a href="modificar_infos.html"><button class="btn third">Editar</button></a>
+</div>
+</body>
 </html>
