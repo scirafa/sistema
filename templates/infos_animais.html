@@ -1,96 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-
     <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
-
-     <title>Informações</title>
+    <title>Informações</title>
 <style>
 body {
-
-    padding: 0;
-
-    margin: 0;
-
     background-color: #f0f7a3;
+    margin-top: 5%;
 
+        }
+caption {
+  text-decoration: underline #ADD8E6;
 }
+
 table, td, th {
-  border: 1px solid black;
+  border: 1px solid;
 }
 
 table {
+  width: 100%;
   border-collapse: collapse;
-  width: 50%;
 }
 
-tr:hover {background-color: #add8e6;}
-
-.btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #e74c3c;
-    border-radius: 0.6em;
-    color: #e74c3c;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    padding: 1.2em 2.8em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-.btn:hover, .btn:focus {
-    color: black;
-    outline: 0;
-}
-.third {
-    border-color: #add8e6;
-    color: #fff;
-    box-shadow: 0 0 20px 20px #add8e6 inset, 0 0 0 0 #add8e6;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-}
-.third:hover {
-    box-shadow: 0 0 10px 0 #add8e6 inset, 0 0 10px 4px #add8e6;
-}
-.botoes {
-    bottom: 0;
-    text-align:;
+td {
+  text-align: center;
 }
 
-</style>
+tr:hover {background-color: #ADD8E6;}
+ </style>
 </head>
-<body>
+     <body>
+      <table border="1" width="500">
 
-<h2>Informações dos animais</h2>
+       <caption>Informações dos animais</caption>
+       <thead>
+           <tr>
+               <th>Nome</th>
+               <th>Idade</th>
+               <th>Raça</th>
+               <th>Sexo</th>
+               <th>Castrado</th>
+               <th>Comportamento</th>
+
+           </tr>
+       </thead>
+       <tbody>
+         <tr>
+             <td>Amora</td>
+             <td>7 meses</td>
+             <td>Sem raça</td>
+             <td>Fêmea</td>
+             <td>Não</td>
+             <td>Calma</td>
+         </tr>
+       </tbody>
+       <tfoot>
+         <tr>
+         </tr>
+      </tfoot>
 
 
-<table>
-  <tr>
-    <th>Nome</th>
-    <th>Idade</th>
-    <th>Raça</th>
-    <th>Sexo</th>
-    <th>Castrado</th>
-    <th>Comportamento</th>
-  </tr>
-  <tr>
-    <td></td>
-  </tr>
-
-</table>
-<div class="botoes">
-<a href="modificar_infos.html"><button class="btn third">Editar</button></a>
-</div>
-</body>
+      </table>
+     <div class="botoes">
+         <a href="modificar_infos.html"><button class="btn third">Editar</button></a>
+     </div>
+     </body>
 </html>
+
