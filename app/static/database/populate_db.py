@@ -11,41 +11,34 @@ def main(path: str = '.', db_name: str = 'test.db') -> None:
 
        insert_rows(
            cursor,
-           'ingredientes',
-           [{'id_ingredientes': '1',
-             'nome': 'Feijão Preto',
-             'quantidades': '1kg',
+           'infos_animais_a',
+           [{'id_animal_a': '1',
+             'nome_animal_a': 'Luna',
+             'raca_animal_a': 'srd',
+             'sexo_animal_a': 'fêmea',
+             'idade_animal_a': '3',
+             'castrado_a': 's',
+             'comport_animal_a': 'agitada, adora brincar',
+             'gatilhos_animal_a': 'gatos',
+             'nome_dono_a': 'Nicole Grazzioli',
+             'end_dono_a': 'rua 10, num 200',
+             'fone_dono_a': '01555999570938',
              },
-            {'id_ingredientes': '2',
-             'nome': 'Água',
-             'quantidades': 'até cobrir o feijão',
-             },
+            {'id_animal_a': '2',
+             'nome_animal_a': 'Bob',
+             'raca_animal_a': 'spitz alemão',
+             'sexo_animal_a': 'macho',
+             'idade_animal_a': '6',
+             'castrado_a': 's',
+             'comport_animal_a': 'calmo, pouca energia',
+             'gatilhos_animal_a': 'nenhum',
+             'nome_dono_a': 'Carlos Silva',
+             'end_dono_a': 'rua Flor de Liz, num 569',
+             'fone_dono_a': '01555999648257',
             ])
 
        # RELAÇÕES
 
-       insert_rows(
-           cursor,
-           'receitas_para_preparo',  # OK
-           [{'id_preparo': 1, 'id_receita': 1},
-            {'id_preparo': 2, 'id_receita': 1},
-            {'id_preparo': 3, 'id_receita': 1},
-            {'id_preparo': 4, 'id_receita': 1},
-            {'id_preparo': 5, 'id_receita': 1},
-            {'id_preparo': 6, 'id_receita': 1},
-            {'id_preparo': 7, 'id_receita': 1},
-            {'id_preparo': 8, 'id_receita': 1},
-            # Nega Maluca
-            {'id_preparo': 9, 'id_receita': 2},
-            {'id_preparo': 10, 'id_receita': 2},
-            {'id_preparo': 11, 'id_receita': 2},
-            {'id_preparo': 12, 'id_receita': 2},
-            {'id_preparo': 13, 'id_receita': 2},
-            {'id_preparo': 14, 'id_receita': 2},
-            {'id_preparo': 15, 'id_receita': 2},
-            {'id_preparo': 16, 'id_receita': 2},
-            {'id_preparo': 17, 'id_receita': 2},
-            ])
 
        print('Tuplas inseridas com sucesso!')
        # TODO desenvolva seu código aqui
